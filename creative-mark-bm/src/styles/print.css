@@ -1,0 +1,59 @@
+/* Print styles for invoices */
+@media print {
+  @page {
+    margin: 20mm;
+    size: A4;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide non-essential elements when printing */
+  .print\\:hidden {
+    display: none !important;
+  }
+
+  /* Remove shadows and borders for cleaner print */
+  .print\\:shadow-none {
+    box-shadow: none !important;
+  }
+
+  .print\\:border-none {
+    border: none !important;
+  }
+
+  /* Ensure full width on print */
+  .print\\:max-w-none {
+    max-width: none !important;
+  }
+
+  .print\\:w-full {
+    width: 100% !important;
+  }
+
+  /* Remove background colors */
+  .print\\:bg-white {
+    background-color: white !important;
+  }
+
+  /* Ensure text is black for better printing */
+  .print\\:text-black {
+    color: black !important;
+  }
+
+  /* Ensure proper page breaks */
+  .print\\:break-before-page {
+    break-before: page;
+  }
+
+  .print\\:break-after-page {
+    break-after: page;
+  }
+
+  /* Prevent unwanted breaks within elements */
+  .print\\:break-inside-avoid {
+    break-inside: avoid;
+  }
+}

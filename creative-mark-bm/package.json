@@ -1,0 +1,44 @@
+{
+  "name": "creative-mark-bm",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "chart.js": "^4.5.0",
+    "framer-motion": "^12.23.21",
+    "html2canvas": "^1.4.1",
+    "html2pdf.js": "^0.12.1",
+    "install": "^0.13.0",
+    "jspdf": "^3.0.3",
+    "lucide-react": "^0.544.0",
+    "next": "^16.0.10",
+    "next-intl": "^4.3.9",
+    "nodemailer": "^7.0.9",
+    "npm": "^11.6.2",
+    "react": "^19.2.3",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^19.2.3",
+    "react-icons": "^5.5.0",
+    "socket.io-client": "^4.8.1",
+    "sweetalert2": "^11.23.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "tailwindcss": "^4"
+  }
+}
