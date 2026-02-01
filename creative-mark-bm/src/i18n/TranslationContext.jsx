@@ -65,7 +65,6 @@ export function TranslationProvider({ children }) {
 
   const t = (key, params = {}) => {
     if (loading || Object.keys(translations).length === 0) {
-      console.log('Translations not loaded yet, returning key:', key);
       return key;
     }
     
@@ -76,14 +75,12 @@ export function TranslationProvider({ children }) {
       if (value && typeof value === 'object' && k in value) {
         value = value[k];
       } else {
-        console.warn(`Translation key not found: ${key}`, { translations, keys });
         return key; // Return the key if translation not found
       }
     }
     
     // Ensure we always return a string
     if (typeof value !== 'string') {
-      console.warn(`Translation value is not a string for key: ${key}`, { value, type: typeof value });
       return key; // Return the key if value is not a string
     }
     
